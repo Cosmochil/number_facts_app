@@ -1,0 +1,104 @@
+/*
+I don't know what is the problem Let me think
+*/
+@font-face {
+    font-family: "Space Mono";
+    src: url("./fonts/SpaceMono-Regular.ttf") format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("../css/images/wallpaper.png");
+    background-repeat: no-repeat;
+}
+
+
+.header {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Space Mono";
+    text-transform: uppercase; 
+    background-color: rgba(227,228,224, 0.8);
+    color: #4b4343;
+    margin: 0;
+    padding: 40px;
+}
+
+.header h2 {
+    font-size: 3rem;
+}
+
+
+.content { 
+    font-family: "Space Mono";
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(175,159,140, 0.8);
+    font-size: 2rem;
+}
+
+.content input, button, select {
+    padding: 10px;
+    border: 0;
+    font-size: 2rem;
+    border-radius: 40px;
+}
+
+.display {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b4343;
+    background-color: rgba(212,200,190, 0.8);
+    font-family: "Space Mono";
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .content input, button, select {
+        padding: 10px;
+        border: 0;
+        font-size: 1rem;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    .display {
+        height: 60vh;
+        font-size: 1rem;
+    }
+}
+/*
+Okay does it look good now?
+sorta. Okay so How to explain this
+please come to telegram first
+*/
+
+
+
