@@ -31,7 +31,6 @@ submit.addEventListener("click", (event)=> {
 })
 
 /*
-Okay now its time to add CSS to this
-
-First lets wrap the main into a container
+This isn't your project you push to your github
+the project is in other folder
 */
