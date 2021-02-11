@@ -8,7 +8,7 @@ let collection = ["trivia", "date", "year", "math"]
 let random_fact = Math.floor(Math.random() * 4)
 
 async function random_number_fact(){
-    const response = await fetch(`https://numbersapi.com/random/${collection[random_fact]}?json`);
+    const response = await fetch(`http://numbersapi.com/random/${collection[random_fact]}?json`);
     const data = await response.json()
     display.innerHTML = `
         <h2>${data.text}</h2>
@@ -18,7 +18,7 @@ button.addEventListener("click", ()=> random_number_fact())
 
 
 async function user_number_fact(user_number, fact_options){
-    const response = await fetch(`https://numbersapi.com/${user_number}/${fact_options}?json`)
+    const response = await fetch(`http://numbersapi.com/${user_number}/${fact_options}?json`)
     const data = await response.json()
     display.innerHTML = `
         <h2>${data.text}</h2>
