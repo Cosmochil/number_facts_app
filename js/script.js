@@ -14,7 +14,7 @@ async function random_number_fact(){
         <h2>${data.text}</h2>
     `
 }
-button.addEventListener("click", ()=> random_number_fact())
+
 
 
 async function user_number_fact(user_number, fact_options){
@@ -24,8 +24,12 @@ async function user_number_fact(user_number, fact_options){
         <h2>${data.text}</h2>
     `
 }
+button.addEventListener("click", function(){
+    random_number_fact()
+})
 
-submit.addEventListener("click", (event)=> {
+
+submit.addEventListener("click", function(event){
     event.preventDefault();
     user_number_fact(user_number.value, fact_options.value);
 })
